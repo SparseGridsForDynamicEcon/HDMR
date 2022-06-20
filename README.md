@@ -1,5 +1,5 @@
-# High-Dimensional Dynamic Stochastic Model Representation (HDMR)
-This code repository here supplements the work of Eftekhari and Scheidegger, titled _[High-Dimensional Dynamic Stochastic Model Representation](#publication)_ (SIAM SISC 2022), which introduces a highly scalable function approximation technique using Dimensional Decomposition and adaptive Sparse Grid (DDSG) to solve dynamic stochastic economic models. Concretely, the DDSG algorithm is embedded in a time-iteration algorithm to solve high-dimensional, nonlinear dynamic stochastic economic models. Furthermore, the introduced method can trivilly be extended to solve models with value function iteration. Note that our algorithm was originally developed in C++ and Fortran using hybrid parallelism (OpenMP and MPI); however, the MPI parallel Python implementation presented here is intended to be more practical, while still being decently performant in. Concretely:
+# High-Dimensional Dynamic Stochastic Model Representation
+This code repository here supplements the work of Eftekhari and Scheidegger, titled _[High-Dimensional Dynamic Stochastic Model Representation](#publication)_ (Eftekhari and Scheidegger; SIAM SISC 2022), which introduces a highly scalable function approximation technique using Dimensional Decomposition and adaptive Sparse Grid (DDSG) to solve dynamic stochastic economic models. Concretely, the DDSG algorithm is embedded in a time-iteration algorithm to solve high-dimensional, nonlinear dynamic stochastic economic models. Furthermore, the introduced method can trivilly be extended to solve models with value function iteration. Note that our algorithm was originally developed in C++ and Fortran using hybrid parallelism (OpenMP and MPI); however, the MPI parallel Python implementation presented here is intended to be more practical, while still being decently performant in. Concretely:
 
 * This repository provieds a versatile and generic method for approximating very high-dimensional functions.
 * This repository provides a method that is applicable in computing recursive equilibria of nonlinear dynamic stochastic economic models with many state variables.
@@ -81,7 +81,7 @@ _Note that for parallelization within the sparse grid, the option `ddsg.sg_prl=T
 ### lib/IRBC.py
 The International Real Business Cycle (IRBC) library supports two models: _smooth_ and _non-smooth_. We refer to an IRBC model as smooth if there are no kinks in the policies and non-smooth if there are non-differentiabilities in the latter functions. The models are simple to describe, have a unique solution, and their dimensionality can be meaningfully scaled up. As such, these models are used to test various solution strategies for large-scale dynamic stochastic economic models. This model trait allows us to focus on the computational problems of dealing with high-dimensional state spaces. 
 
-_The models are implemented and parameterized (by default) as per the article by Brumm, Krause, Schaab, and Scheidegger titled [Sparse Grids for Dynamic Economic Models](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3979412)(2021). For further details, we refer the reader to the article._
+_The models are implemented and parameterized (by default) as per the article by Brumm and Scheidegger titled [Using Adaptive Sparse Grids to Solve High-Dimensional Dynamic Models]([https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3979412](https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA12216))(2017). For further details, we refer the reader to that article._
 
 #### Usage
 Using the IRBC model requires the following steps:
@@ -148,7 +148,7 @@ The analytical examples provided for DDSG cover the following topics:
 4. Performance and the effect of cure-of-dimensionality.
 5. Scalability and execution on distributed memory architectures (parallel execution). _The standalone python script `examples/analytical/unit_test.py` is used in these tests._
 
-[![Generic badge](https://img.shields.io/badge/jupyter%20nbviewer-DDSG-green)](https://nbviewer.jupyter.org/github/https://github.com/SparseGridsForDynamicEcon/HDMR/blob/master/examples/analytical/tutorial.ipynb)
+[![Generic badge](https://img.shields.io/badge/jupyter%20nbviewer-DDSG-green)](https://nbviewer.jupyter.org/github/https://github.com/SparseGridsForDynamicEcon/py-HDMR/tree/main/examples/analytical/tutorial.ipynb)
 
 
 ### examples/irbc
@@ -160,8 +160,9 @@ The IRBC examples provided here cover the following topics:
 5. Computing metrics such as stagnation and simulation error of the policy function. 
 6. Scalability and performance of using DDSG in place of just SG (parallel execution). _The standalone python script `examples/irbc/unit_test.py` is used in these tests._
 
-[![Generic badge](https://img.shields.io/badge/jupyter%20nbviewer-IRBC-green)](https://nbviewer.jupyter.org/github/https://github.com/SparseGridsForDynamicEcon/HDMR/blob/master/examples/analytical/tutorial.ipynb)
+[![Generic badge](https://img.shields.io/badge/jupyter%20nbviewer-IRBC-green)](https://nbviewer.jupyter.org/github/https://github.com/SparseGridsForDynamicEcon/py-HDMR/tree/main/examples/irbc/tutorial.ipynb)
 
+https://github.com/SparseGridsForDynamicEcon/py-HDMR/tree/main/examples/irbc
 
 ## Publication
 
@@ -187,8 +188,8 @@ See [here](https://arxiv.org/pdf/2202.06555.pdf) for an archived version of the 
 
 
 ### Other Relate Resreach 
-[Brumm & Scheidegger (2017)](https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA12216)).
-[Sparse Grids for Dynamic Economic Models](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3979412)(2021)
+[Using Adaptive Sparse Grids to Solve High-Dimensional Dynamic Models; Brumm & Scheidegger (2017)](https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA12216)).
+[Sparse Grids for Dynamic Economic Models; Brumm et al. (2022)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3979412)(2021)
 
 
 ## Prerequisites / Installation
