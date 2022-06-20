@@ -148,7 +148,7 @@ The analytical examples provided for DDSG cover the following topics:
 4. Performance and the effect of cure-of-dimensionality.
 5. Scalability and execution on distributed memory architectures (parallel execution). _The standalone python script `examples/analytical/unit_test.py` is used in these tests._
 
-[![Generic badge](https://img.shields.io/badge/jupyter%20nbviewer-DDSG-green)](https://nbviewer.jupyter.org/github/https://github.com/SparseGridsForDynamicEcon/py-HDMR/tree/main/examples/analytical/tutorial.ipynb)
+[![Generic badge](https://img.shields.io/badge/jupyter%20nbviewer-DDSG-green)](https://nbviewer.org/github/SparseGridsForDynamicEcon/HDMR/blob/main/examples/analytical/tutorial.ipynb)
 
 
 ### examples/irbc
@@ -160,7 +160,7 @@ The IRBC examples provided here cover the following topics:
 5. Computing metrics such as stagnation and simulation error of the policy function. 
 6. Scalability and performance of using DDSG in place of just SG (parallel execution). _The standalone python script `examples/irbc/unit_test.py` is used in these tests._
 
-[![Generic badge](https://img.shields.io/badge/jupyter%20nbviewer-IRBC-green)](https://nbviewer.jupyter.org/github/https://github.com/SparseGridsForDynamicEcon/py-HDMR/tree/main/examples/irbc/tutorial.ipynb)
+[![Generic badge](https://img.shields.io/badge/jupyter%20nbviewer-IRBC-green)](https://nbviewer.org/github/SparseGridsForDynamicEcon/HDMR/blob/main/examples/irbc/tutorial.ipynb)
 
 
 ## Publication
