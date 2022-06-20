@@ -1,4 +1,4 @@
-# High-Dimensional Dynamic Stochastic Model Representation
+# High-Dimensional Dynamic Stochastic Model Representation (HDMR)
 This code repository here supplements the work of Eftekhari and Scheidegger, titled _[High-Dimensional Dynamic Stochastic Model Representation](#publication)_ (SIAM SISC 2022), which introduces a highly scalable function approximation technique using Dimensional Decomposition and adaptive Sparse Grid (DDSG) to solve dynamic stochastic economic models. Concretely, the DDSG algorithm is embedded in a time-iteration algorithm to solve high-dimensional, nonlinear dynamic stochastic economic models. Furthermore, the introduced method can trivilly be extended to solve models with value function iteration. Note that our algorithm was originally developed in C++ and Fortran using hybrid parallelism (OpenMP and MPI); however, the MPI parallel Python implementation presented here is intended to be more practical, while still being decently performant in. Concretely:
 
 * This repository provieds a versatile and generic method for approximating very high-dimensional functions.
