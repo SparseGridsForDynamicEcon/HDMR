@@ -23,17 +23,6 @@ correspond to `p_next` and `p_last`, respectivily. These policy functions are ap
 ## Libraries 
 The primary libraries introduced in this repository are _DDSG_ for function approximation (used for both DDSG and adaptive SG) and _IRBC_ for IRBC model description.
 
-To correctly import the libraries, their paths must be included in your system path. A simple method can be to hard code it using `sys.path.append('/path/to/this_repo/lib')`. Throughout this repository, we use the following code as the required path:
-
-```
-import os
-import sys
-# add root into path 
-sys.path.append(os.path.dirname(pathlib.Path("__file__").absolute().parent.parent)) 
-```
-The path is encoded as two subdirectories back (corresponding to `parent.parent`) from the absolute path of the file being executed (corresponding to `pathlib.Path('__file__).absolute()`). For more details, refer to https://docs.python.org/3/tutorial/modules.html.
-
-
 ### lib/DDSG.py
 The DDSG technique is a grid-based function approximation method that combines High-Dimension Model Representation, a variant of _Dimensional Decomposition_ (DD), and adaptive _Sparse Grid_ (SG). The combined approach enables a highly performant and scalable gird base function approximation method that can scale efficiently to high dimensions and utilize distributed memory architectures. This library is user-friendly and parallelized with MPI. The SG components of the algorithm use the [Tasmanian](https://tasmanian.ornl.gov) open-source SG library.
 
@@ -97,7 +86,7 @@ import numpy as np
 model = IRBC(num_countries=2, irbc_type='non-smooth') 
 model.set_parameters()
 model.set_integral_rule() 
-mode.print_parameters()
+model.print_parameters()
 ```
 
 #### Integration with DDSG
@@ -192,6 +181,13 @@ See [here](https://arxiv.org/pdf/2202.06555.pdf) for an archived version of the 
 
 
 ## Prerequisites / Installation
+
+### Quick start installation of prerequisites
+```shell
+$ pip3 install -r requirements.txt
+```
+
+### Detailed installation of prerequisites
 _SG library (required by DDSG)_
 ```shell
 $ pip3 install Tasmanian
@@ -214,6 +210,17 @@ _Visualization and tabulation_
 $ pip3 install matplotlib 
 $ pip3 install tabulate
 ```
+
+## Package creation and installation
+A package can be created for distribution purpose:
+```shell
+$ python3 setup.py sdist
+```
+This produces a file in `dist` directory that can be installed in a virtual environment as follows:
+```shell
+$ pip3 install HDMR-0.0.1.tar.gz   #replace 0.0.1 with appropriate version
+```
+Using such package installation, requirements will be installed automatically.
 
 ## Support
 This work is generously supported by grants from the [Swiss National Science Foundation](https://www.snf.ch) under project IDs “New methods for asset pricing with frictions”, "Can economic policy mitigate climate change", and the [Enterprise for Society (E4S)](https://e4s.center).
