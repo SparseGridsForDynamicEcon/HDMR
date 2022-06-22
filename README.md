@@ -223,4 +223,4 @@ $ pip3 install HDMR-0.0.1.tar.gz   #replace 0.0.1 with appropriate version
 Using such package installation, requirements will be installed automatically.
 
 ## Support
-This work is generously supported by grants from the [Swiss National Science Foundation](https://www.snf.ch) under project IDs “New methods for asset pricing with frictions”, "Can economic policy mitigate climate change", and the [Enterprise for Society (E4S)](https://e4s.center).
+This work is generously supported by grants from the [Swiss National Science Foundation](https://www.snf.ch) under project IDs “New methods for asset pricing with frictions”, "Can economic policy mitigate climate change", the [Enterprise for Society (E4S)](https://e4s.center), and Emmanuel Jeanvoine from UNIL's [DCSR](https://www.unil.ch/ci/fr/home/menuinst/calcul--soutien-recherche.html).
