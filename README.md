@@ -24,7 +24,7 @@ correspond to `p_next` and `p_last`, respectivily. These policy functions are ap
 The primary libraries introduced in this repository are _DDSG_ for function approximation (used for both DDSG and adaptive SG) and _IRBC_ for IRBC model description.
 
 ### lib/DDSG.py
-The DDSG technique is a grid-based function approximation method that combines High-Dimension Model Representation, a variant of _Dimensional Decomposition_ (DD), and adaptive _Sparse Grids_ (SG). The combined approach enables a highly performant and scalable gird base function approximation method that can scale efficiently to high dimensions and utilize distributed memory architectures. This library is user-friendly and parallelized with MPI. The SG components of the algorithm use the [Tasmanian](https://tasmanian.ornl.gov) open-source SG library. Instructions on how to install DDSG can be found _[here](#Prerequisites and Installation)_ .
+The DDSG technique is a grid-based function approximation method that combines High-Dimension Model Representation, a variant of _Dimensional Decomposition_ (DD), and adaptive _Sparse Grids_ (SG). The combined approach enables a highly performant and scalable gird base function approximation method that can scale efficiently to high dimensions and utilize distributed memory architectures. This library is user-friendly and parallelized with MPI. The SG components of the algorithm use the [Tasmanian](https://tasmanian.ornl.gov) open-source SG library. Instructions on how to install DDSG can be found [here](#Installation).
 
 #### Usage
 Using the DDSG requires the following steps:
@@ -180,7 +180,7 @@ See [here](https://arxiv.org/pdf/2202.06555.pdf) for an archived version of the 
 * [Sparse Grids for Dynamic Economic Models; Brumm et al. (2022)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3979412)(2021)
 
 
-## Prerequisites and Installation
+## Installation
 
 ### Quick start installation of prerequisites
 ```shell
