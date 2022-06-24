@@ -24,7 +24,7 @@ correspond to `p_next` and `p_last`, respectivily. These policy functions are ap
 The primary libraries introduced in this repository are _DDSG_ for function approximation (used for both DDSG and adaptive SG) and _IRBC_ for IRBC model description.
 
 ### lib/DDSG.py
-The DDSG technique is a grid-based function approximation method that combines High-Dimension Model Representation, a variant of _Dimensional Decomposition_ (DD), and adaptive _Sparse Grid_ (SG). The combined approach enables a highly performant and scalable gird base function approximation method that can scale efficiently to high dimensions and utilize distributed memory architectures. This library is user-friendly and parallelized with MPI. The SG components of the algorithm use the [Tasmanian](https://tasmanian.ornl.gov) open-source SG library.
+The DDSG technique is a grid-based function approximation method that combines High-Dimension Model Representation, a variant of _Dimensional Decomposition_ (DD), and adaptive _Sparse Grids_ (SG). The combined approach enables a highly performant and scalable gird base function approximation method that can scale efficiently to high dimensions and utilize distributed memory architectures. This library is user-friendly and parallelized with MPI. The SG components of the algorithm use the [Tasmanian](https://tasmanian.ornl.gov) open-source SG library. Instructions on how to install DDSG can be found _here(#Prerequisites / Installation).
 
 #### Usage
 Using the DDSG requires the following steps:
