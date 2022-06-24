@@ -1,15 +1,13 @@
 # add root into path 
 import os
 import sys
-import pathlib
-sys.path.insert(0, os.path.dirname(pathlib.Path("__file__").absolute().parent.parent)) 
 
 import time
 import numpy as np
 from tabulate import tabulate
 from scipy import optimize
-from lib.IRBC import IRBC
-from lib.DDSG import DDSG
+from IRBC import IRBC
+from DDSG import DDSG
 
 #input parameters
 num_countries   = int(sys.argv[1])

@@ -1,13 +1,11 @@
 # add root into path 
 import os
 import sys
-import pathlib
-sys.path.insert(0, os.path.dirname(pathlib.Path("__file__").absolute().parent.parent)) 
-
 import time
+
 import numpy as np
 from tabulate import tabulate
-from lib.DDSG import DDSG 
+from DDSG import DDSG
 
 # get parameters from command line
 d       = int(sys.argv[1])
