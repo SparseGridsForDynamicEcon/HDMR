@@ -177,7 +177,7 @@ See [here](https://arxiv.org/pdf/2202.06555.pdf) for an archived version of the 
 
 ### Other Relate Resreach 
 * [Using Adaptive Sparse Grids to Solve High-Dimensional Dynamic Models; Brumm & Scheidegger (2017)](https://onlinelibrary.wiley.com/doi/abs/10.3982/ECTA12216)).
-* [Sparse Grids for Dynamic Economic Models; Brumm et al. (2022)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3979412)(2021)
+* [Sparse Grids for Dynamic Economic Models; Brumm et al. (2022)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3979412)
 
 
 ## Installation
