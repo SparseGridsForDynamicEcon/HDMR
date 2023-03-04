@@ -6,7 +6,7 @@ This code repository supplements the work of Eftekhari and Scheidegger, titled _
 * The method has been demonstrated in the accompanied article that dynamic stochastic models with up to 300 state variables could be solved globally using DDSG.
 * This repository aims to make our method easily accessible to the computational economics and finance community. 
 
-__For Course "ECON 8210-001	Quantitative MacroEconomic Theory" see https://economics.sas.upenn.edu/course-list/2023A and syllabus [here](https://drive.google.com/file/d/1Xn7cIQZ-PLBa8Rhvrb0ZHmWhhhUUsoBi/view) __
+__For Course "ECON 8210-001	Quantitative MacroEconomic Theory" see https://economics.sas.upenn.edu/course-list/2023A and syllabus [here](https://drive.google.com/file/d/1Xn7cIQZ-PLBa8Rhvrb0ZHmWhhhUUsoBi/view)__
 
 ![image](https://drive.google.com/uc?id=120KCXRvqwZHefPsUbjmkLex8pK5PMf1S)
 
