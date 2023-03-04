@@ -5,6 +5,7 @@ This code repository supplements the work of Eftekhari and Scheidegger, titled _
 * This repository provides a method that is applicable in computing recursive equilibria of nonlinear dynamic stochastic economic models with many state variables.
 * The method has been demonstrated in the accompanied article that dynamic stochastic models with up to 300 state variables could be solved globally using DDSG.
 * This repository aims to make our method easily accessible to the computational economics and finance community. 
+* For Course "ECON 8210-001	Quantitative MacroEconomic Theory" see https://economics.sas.upenn.edu/course-list/2023A.
 
 ![image](https://drive.google.com/uc?id=120KCXRvqwZHefPsUbjmkLex8pK5PMf1S)
 
